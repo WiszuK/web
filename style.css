@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto+Flex:wght@100&display=swap');
+* {
+    font-family: 'Roboto Flex';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 5px 5px 13px;
+    border-bottom-right-radius: 20%;
+    position: fixed;
+    width: 100%;
+    height: 98px;
+    border-bottom: 2px solid orange;
+    z-index: 1000;
+    justify-content: center;
+    background-color: black;
+}
+body{  display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.tlo {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: -1;
+    filter: brightness(0.24) blur(3px);
+}
+
+header h1 {
+    margin: 4px 8% 16px 60px;
+    width: 227px;
+    border-bottom:0.5px solid white;
+    text-align: center;
+    color: white;
+    padding: 2px 3px;
+    font-size: 2em;
+}
+.menu { 
+    left:-50px;
+    position:relative;
+    margin: 10px auto;
+    display: flex;
+    width:620px;
+    border: 0px solid red;
+    gap: 40px;
+}
+.phone_kon {
+    position: relative;
+    right:50px;
+    display: flex;
+    background-color: orange;
+    border: 0px solid yellow;
+    width: 135px;
+    height: 29px;
+}
+.num{
+    position:relative;
+    left:5px;
+    margin: auto;
+    font-size: 1.1em;
+    color: black;
+  text-decoration: none;
+}
+.icon_phone{
+    margin: 7px 5px;
+    position: fixed;
+    width:11px;
+    border:0px solid white;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3em;
+    width: 133px;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+.menu a:hover {
+    border-bottom: 2px solid white;
+}
+main {
+   
+}
+
+#home {
+    margin: 0 auto;
+    width:80%;
+    border: 0px solid red;
+    height: auto;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    padding: 50px 0;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+#home h1 {
+    font-size: 68px;
+    line-height: 70px;
+    font-weight: 610;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 5px 5px 9px black;
+
+}
+
+#home .tyt{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 5px 5px 9px black;
+}
+
+#home p {
+    margin: 20px 90px;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 5px 5px 9px black;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+.linery {
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+
+
+.n_oferta {
+    margin: 50px 20px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 6px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #FFFFFF;
+    }
+    .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: orange;
+    }
+   
+   .kontener_oferta {
+    background-color: black;
+    padding: 2px 0;
+    display: flex;
+    border:  1px solid white;
+   }
+
+   .kontener_oferta img {
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    width: 29%;
+    object-fit: contain;
+    
+   }
+
+   .kontener_oferta h2 {
+    margin-left: 90px;
+    text-align: left;
+    margin-top: 110px;
+    font-size: 47px;
+    color:white;
+   }
+   .kontener_oferta p {
+    text-align: left;
+    margin: 20px auto;
+   }
+   .pole_tx{
+    margin-left: 20px;
+   }
+   #o_nas  {
+    margin: 0 auto;
+    width:80%;
+    border: 0px solid red;
+    height: auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding: 50px 0;
+    overflow: auto;
+    overflow-x: hidden;
+   }
+   .txtONAS {
+    margin:40px 100px;
+   }
+   #o_nas p {
+    text-align: left;
+    margin: 20px auto;
+    color: white;
+    font-size: 20px;
+}
+#galeria {
+    margin: 0 auto;
+    width:80%;
+    border: 0px solid red;
+    height: auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding: 50px 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.kon_galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(750px, 1fr));
+    grid-auto-rows: 750px;
+    grid-gap: 10px;
+}
+
+.kon_galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+footer {
+    position: relative;
+    margin-top: 378px;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    opacity: 0.8;
+    z-index: 10;
+    border-top: 2px solid orange;
+}
+footer p{
+    color: white;
+    margin: 10px auto;
+}
+@media (max-width: 1200px){
+
+.menu {
+    margin:5px auto;
+    width:400px;
+    gap: 20px;
+}
+
+    .menu a{
+        font-size: 18px;
+
+    }
+    .kontener_oferta {
+        width:95%;
+        padding: 5px 0;
+        display: flex;
+       
+       } 
+       .kontener_oferta h2 {
+        margin-left: 90px;
+        text-align: left;
+        margin-top: 20px;
+        font-size: 17px;
+        color:white;
+       }
+       .kontener_oferta p {
+        text-align: left;
+        margin: 5px auto;
+        font-size: 2px;
+    }
+    
+}
+@media (max-width: 868px) {
+    header {
+        height: 70px;
+        flex-direction: column;
+    }
+    #home {
+        width: 90%;
+    }
+    header h1 {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1em;
+        width: 140px;
+    }
+    .phone_kon {
+        width:0px;
+      right: 10px; /* Dostosuj do swoich potrzeb */
+    }
+    .icon_phone {
+        margin:9px 7px 9px 3px;
+        width: 0px;
+
+    }
+.num{
+    font-size: 0em;
+}
+    .menu a{
+        font-size: 0.9em;
+    }
+    .menu {
+        left: 0px;
+        margin: 0 auto;
+      width: 400px; /* Dostosuj do swoich potrzeb */
+      border: 1px solid red;
+    }
+    #home .tyt {
+        font-size: 21px;
+    }
+    #home h1{
+        font-size: 45px;
+    }
+    #home p{
+        font-size: 15px;
+        margin: 0 auto;
+    }
+    .kontener_oferta {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+
+    }
+    .kontener_oferta img{
+        width:34%
+    }
+    .kontener_oferta h2 {
+        margin: 20px 0 7px 30px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .pole_tx {
+       margin: 0 auto;
+    }
+    .kontener_oferta p {
+
+        margin: 5px 10px 1px 2px;
+        width: 80%;
+        font-size: 1px;
+    }
+    #o_nas {
+        top:10px;
+    }
+    .txtONAS {
+        margin:10px 60px;
+       }
+    #o_nas p {
+        text-align: center;
+        margin: 10px auto;
+        color: white;
+        font-size: 11px;
+    }
+    .kon_galeria img {
+        width: 62%;
+        height: 62%;
+      
+    }
+    .kon_galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(535px, 1fr));
+        grid-auto-rows: 535px;
+        grid-gap: 1px;
+    }
+}
+  
